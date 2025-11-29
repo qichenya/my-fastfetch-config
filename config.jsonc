@@ -1,0 +1,136 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "builtin",
+        "height": 15,
+        "width": 30,
+        "padding": {
+            "top": 5,
+            "left": 3
+        }
+    },
+    "display": {
+        "bar": {
+            "width": 10,
+            "charElapsed": "■",
+            "charTotal": "-"
+        },
+        "percent": {
+            "type": 3,
+            "color": {
+                "green": "blue",
+                "yellow": "yellow",
+                "red": "red"
+            }
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "format": "\u001b[90m[[\u001b[0m {user-name}@{host-name} \u001b[90m]]\u001b[0m"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m• ───────────────────── \u001b[31m Hardware \u001b[90m───────────────────── •"
+        },
+        {
+            "type": "host",
+            "key": "  ▸ 主板  ",
+            "keyColor": "green"
+        },
+        {
+            "type": "os",
+            "key": "  ▸ 系统  ",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "  ▸ 显示器",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": "  ▸ 处理器",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": "  ▸ 显卡  ",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": "  ▸ 内存  ",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "  ▸ 硬盘  ",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m• ───────────────────────────────────────────────────── •"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m• ──────────────────────\u001b[31m Software \u001b[90m───────────────────── •"
+        },
+        {
+            "type": "os",
+            "key": "  系统   ",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "kernel",
+            "key": "  内核   ",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "shell",
+            "key": "  命令行 ",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "terminal",
+            "key": "  终端   " ,
+            "keyColor": "cyan"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m• ───────────────────────────────────────────────────── •"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m• ──────────────────\u001b[31m Uptime / DT / IP\u001b[90m ───────────────── •"
+        },
+        {
+            "type": "uptime",
+            "key": "  开机时间 ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "datetime",
+            "key": "  当前时间 ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "localip",
+            "key": "  当前IP   ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m• ───────────────────────────────────────────────────── •"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "                     \u001b[30m•\u001b[31m •\u001b[32m •\u001b[33m •\u001b[34m •\u001b[35m •\u001b[36m •\u001b[37m •"
+        }
+    ]
+}
